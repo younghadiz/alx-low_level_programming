@@ -1,20 +1,26 @@
 #include <stdio.h>
 
+
+
 /**
  *
- *  *main- Serves as the entry point for the program
+ *  * main - Prints "Programming is like building a multilingual
  *
- *   *
+ *   *                puzzle, followed by a new line.
  *
- *    *Return: By default returns zero if no erros otherwise returns non-zero value.
+ *    *
  *
- *     */
+ *     * Return: Always 0.
+ *
+ *      */
 
 int main(void)
 
 {
 
 		puts("\"Programming is like building a multilingual puzzle");
+
+
 
 			return (0);
 
