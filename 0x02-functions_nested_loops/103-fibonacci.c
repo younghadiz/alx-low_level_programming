@@ -4,9 +4,9 @@
 
 /**
  *
- *  * main - Prints the add of the even-valued
+ *  * main - Prints the sum of even-valued Fibonacci sequence
  *
- *   * fibonacci numbers.
+ *   *        terms not exceeding 4000000.
  *
  *    *
  *
@@ -18,38 +18,40 @@ int main(void)
 
 {
 
-		long int n1, n2, fn, afn;
+		unsigned long fib1 = 0, fib2 = 1, fibsum;
+
+			float tot_sum;
 
 
 
-			n1 = 1;
+				while (1)
 
-				n2 = 2;
+						{
 
-					fn = afn = 0;
+									fibsum = fib1 + fib2;
 
-						while (fn <= 4000000)
+											if (fibsum > 4000000)
 
-								{
+															break;
 
-											fn = n1 + n2;
 
-													n1 = n2;
 
-															n2 = fn;
+													if ((fibsum % 2) == 0)
 
-																	if ((n1 % 2) == 0)
+																	tot_sum += fibsum;
 
-																				{
 
-																								afn += n1;
 
-																										}
+															fib1 = fib2;
+
+																	fib2 = fibsum;
 
 																		}
 
-							printf("%ld\n", afn);
+					printf("%.0f\n", tot_sum);
 
-								return (0);
+
+
+						return (0);
 
 }
